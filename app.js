@@ -11,8 +11,8 @@ const faces = document.querySelectorAll('.face');
 const faces_item1 = document.querySelectorAll('.face-item1');
 const faces_item2 = document.querySelectorAll('.face-item2');
 const faces_item3= document.querySelectorAll('.face-item3');
-const dataElement = document.querySelector('.data');
-console.log(dataElement);
+const resultElement = document.querySelector('.result');
+// console.log(dataElement);
 // console.log(faces_item3);
 
 let data = 0;
@@ -63,13 +63,13 @@ openBowl.addEventListener("click", function () {
   openBowl.setAttribute("disabled","disabled")
   btnStart.removeAttribute('disabled');
   if(data == 1 || data == 2 || data == 3 || data == 18){
-    dataElement.innerHTML = `${data} - null`;
+    resultElement.innerHTML = `Kết quả: ${data} - null`;
   }
   else if(data >= 4 && data <= 10) {
-    dataElement.innerHTML = `${data} - Xỉu`;
+    resultElement.innerHTML = `Kết quả: ${data} - Xỉu`;
   }
   else if(data >= 11 && data <= 17){
-    dataElement.innerHTML = `${data} - Tài`;
+    resultElement.innerHTML = `Kết quả: ${data} - Tài`;
   }
     // dataElement.innerHTML =  `${data} - ${data >= 4 && data <= 10  ? "Xỉu" : "Tài"}`;
 });

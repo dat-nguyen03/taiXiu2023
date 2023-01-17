@@ -14,7 +14,7 @@
 }
 .bowl {
   position: absolute;
-  width: 400px;
+  width: 300px;
   z-index: 10;
   transition: transform 0.25s ease;
   transform: translate(60%,-70%);
@@ -40,7 +40,7 @@
 .box>img {
   position: absolute;
   z-index: -1;
-  width: 500px;
+  width: 350px;
 }
 .box-item {
   /* transform-style: preserve-3d; */
@@ -75,10 +75,10 @@
 
 .result {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   font-size: 1.5rem;
   background-color: #fff;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
 }
 .btn {
   position: absolute;
